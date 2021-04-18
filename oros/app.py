@@ -48,5 +48,8 @@ def reread(email):
 def mailing():
   return "Pass"
 
+@app.route('/admin')
+def admin():
+    return render_template('loginadmin.html')
 
 app.run(debug = True)
